@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Welcome to V0idHat</Text>
-      <StatusBar style="auto" />
-    </View>
+    <WebView
+      style={styles.container}
+      source={{ uri: 'https://voidhat.medium.com' }}
+    />
   );
 }
 
